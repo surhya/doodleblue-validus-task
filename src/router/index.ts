@@ -1,15 +1,31 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "Login",
+    component: Login,
   },
+
+  {
+    path: "/forgot-password",
+    name: "Forgotpassword",
+    component: () =>
+      import("../views/Forgotpassword.vue"),
+  },
+
+  {
+    path: "/reset-password",
+    name: "Resetpassword",
+    component: () =>
+      import("../views/Resetpassword.vue"),
+  },
+
+
   {
     path: "/about",
     name: "About",
