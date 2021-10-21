@@ -25,6 +25,13 @@ const routes: Array<RouteConfig> = [
       import("../views/Resetpassword.vue"),
   },
 
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    component: () =>
+      import("../views/Dashboard.vue"),
+  },
+
 
   {
     path: "/about",
