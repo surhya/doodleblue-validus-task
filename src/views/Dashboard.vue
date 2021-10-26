@@ -37,6 +37,14 @@ import Stats from '@/components/dashboard/Stats.vue'
     Verticalmenu,
     Stats
     
+  },
+
+  computed: {
+    helloMessage: {
+      get (): string {
+        return this.$store.state.helloMessage;
+      }
+    }
   }
 })
 

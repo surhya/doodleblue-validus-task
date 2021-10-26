@@ -1,15 +1,75 @@
 <template>
-     <div class="vertical-menu">
-        <a href="#" class="active"><img src="../../assets/dashboard-logo.png" alt="">Dashboard</a>
-        <a href="#"><img src="../../assets/companies-logo.png" alt="">Companies</a>
-        <a href="#"><img src="../../assets/staff-logo.png" alt="">Staff</a>
-        <a href="#"><img src="../../assets/reports-logo.png" alt="">Reports</a>
-        <a href="#"><img src="../../assets/membership-logo.png" alt="">Membership Plan</a>
-        <a href="#"><img src="../../assets/settings-logo.png" alt="">Settings</a>
-    </div>
+<div class="vertical-menu">
+        <a href="" class="active">
+        <div class="row">
+            <div class="column img-align">
+               <img src="../../assets/dashboard-logo.png" alt="">
+            </div>
+            <div class="column text-al">
+               <p>Dashboard</p>
+            </div>
+        </div>
+       </a>
+        <a href="">
+        <div class="row">
+            <div class="column img-align">
+               <img src="../../assets/companies-logo.png" alt="">
+            </div>
+            <div class="column text-al">
+               <p>Companies</p>
+            </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="row">
+            <div class="column img-align">
+               <img src="../../assets/staff-logo.png" alt="">
+            </div>
+            <div class="column text-al">
+               <p>Staff</p>
+            </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="row">
+            <div class="column img-align">
+               <img src="../../assets/reports-logo.png" alt="">
+            </div>
+            <div class="column text-al">
+               <p>Reports</p>
+            </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="row">
+            <div class="column img-align">
+               <img src="../../assets/membership-logo.png" alt="">
+            </div>
+            <div class="column text-al">
+               <p>Membership Plan</p>
+            </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="row">
+            <div class="column img-align">
+               <img src="../../assets/settings-logo.png" alt="">
+            </div>
+            <div class="column text-al">
+               <p>Settings</p>
+            </div>
+        </div>
+        </a>
+
+</div>
 </template>
 
 <style scoped>
+* {
+  box-sizing: border-box;
+}
+
+
 .vertical-menu {
   width: 100%;
 }
@@ -18,9 +78,9 @@
   background-color: #f7f5f5;
   color: #555555;
   display: block;
-  padding: 20px;
+  
   text-decoration: none;
-  text-align: left;
+  
 }
 
 .vertical-menu a:hover {
@@ -32,7 +92,33 @@
   color: white;
 }
 
-.vertical-menu img {
+/* .vertical-menu img {
     padding-right: 20px;
+} */
+
+.column {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 70px;
+  
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img-align{
+    width: 30%;
+    padding-top: 22px;
+    
+}
+
+.text-al{
+    text-align: left;
 }
 </style>

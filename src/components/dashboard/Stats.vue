@@ -8,7 +8,7 @@
                                   <div class="container">
                                     <p class="card-title">Total Active Members</p> 
                                     <div class="line"></div>
-                                    <p class="card-detail">6,850</p> 
+                                    <p class="card-detail">{{totalMember}}</p> 
                                 </div>
                             </div>
                         </div>
@@ -17,7 +17,7 @@
                                   <div class="container">
                                     <p class="card-title">Active Members - Last 3 Months</p> 
                                     <div class="line"></div>
-                                    <p class="card-detail">1,068</p> 
+                                    <p class="card-detail">{{activeMember}}</p> 
                                 </div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                                   <div class="container">
                                     <p class="card-title">Total Deactivated Members</p> 
                                     <div class="line"></div>
-                                    <p class="card-detail">125</p> 
+                                    <p class="card-detail">{{deactiveMember}}</p> 
                                 </div>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                                   <div class="container">
                                     <p class="card-title">365 Fitness</p> 
                                     <div class="line"></div>
-                                    <p class="card-detail">2,654</p> 
+                                    <p class="card-detail">{{fitnessType}}</p> 
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                                   <div class="container">
                                     <p class="card-title">Express Fitness</p> 
                                     <div class="line"></div>
-                                    <p class="card-detail">2,327</p> 
+                                    <p class="card-detail">{{expressFitness}}</p> 
                                 </div>
                             </div>
                         </div>
@@ -57,13 +57,71 @@
                                   <div class="container">
                                     <p class="card-title">FitPlex</p> 
                                     <div class="line"></div>
-                                    <p class="card-detail">2,874</p> 
+                                    <p class="card-detail">{{fitPlex}}</p> 
                                 </div>
                             </div>
                         </div>
                     </div>
     </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+
+@Component({
+    computed: {
+   
+   helloMessage: {
+      get (): string {
+        return this.$store.state.helloMessage;
+      }
+    },
+
+    totalMember: {
+     get (): string {
+        return this.$store.state.memberstats.totalmember;
+      }
+    },
+
+    activeMember: {
+     get (): string {
+        return this.$store.state.memberstats.activemember;
+      }
+    },
+
+    deactiveMember: {
+     get (): string {
+        return this.$store.state.memberstats.deactivemember;
+      }
+    },
+
+    fitnessType: {
+     get (): string {
+        return this.$store.state.membergymtype.fitness;
+      }
+    },
+
+     expressFitness: {
+     get (): string {
+        return this.$store.state.membergymtype.expressfitness;
+      }
+    },
+
+     fitPlex: {
+     get (): string {
+        return this.$store.state.membergymtype.fitplex;
+      }
+    }
+
+  }
+
+})
+
+export default class Stats extends Vue {
+}
+
+</script>
 
 <style scoped>
 .dashboard-heading{
