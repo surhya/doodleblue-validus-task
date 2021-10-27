@@ -32,6 +32,13 @@ const routes: Array<RouteConfig> = [
       import("../views/Dashboard.vue"),
   },
 
+  {
+    path: "/companies",
+    name: "Companies",
+    component: () =>
+      import("../views/Companies.vue"),
+  },
+
 
   {
     path: "/about",
