@@ -1,29 +1,29 @@
 <template>
     <div>
-        <h4 class="dashboard-heading">Companies</h4>
-        <h4 class="dashboard-heading">All Companies</h4>
+        <h4 class="dashboard-heading">Staff</h4>
+        <h4 class="dashboard-heading">Sagicor Staff Details</h4>
 
         <div class="row">
             <div class="column serach">
-                <input type="text" placeholder="search company...">
+                <input type="text" placeholder="search staffs">
                
             </div>
             <div class="column sort">
                 <div class="row">
                     <div class="sub-column">
-                        <p class="sort-text">Sort by</p>
+                        <!-- <p class="sort-text">Sort by</p> -->
                     </div>
                     
                     <div class="sub-column">
-                         <select>
+                         <!-- <select>
                             <option value="0">Disabled Companies</option>
                             <option value="1">Disabled</option>
                             
-                        </select>
+                        </select> -->
                     </div>
                     
                     <div class="sub-column">
-                        <input type="button" value="Add Company">
+                        <input type="button" value="Add Staff">
                     </div>
                 </div>
                 
@@ -34,20 +34,20 @@
             <table>
                 <tr>
                     <th class="s-align">S.No</th>
-                    <th>Company Name</th>
-                    <th>Tax ID</th>
+                    <th>Staff Name</th>
+                    <th>Employee ID</th>
                     <th>Email</th>
                     <th>Contact Number</th>
-                    <th class="s-align">Action</th>
+                    <th class="s-align"></th>
                     <th></th>
                 </tr>
-                <tr v-for="company in companiesdata" :key="company.sno">
-                    <td class="s-align">{{company.sno}}</td>
-                    <td>{{company.companyName}}</td>
-                    <td>{{company.taxId}}</td>
-                    <td>{{company.email}}</td>
-                    <td>{{company.contactNumber}}</td>
-                    <td class="s-align"><input class="action-button" type="submit"  value="Disable"></td>
+                <tr v-for="staff in staffdata" :key="staff.id">
+                    <td class="s-align">{{staff.id}}</td>
+                    <td>{{staff.staffName}}</td>
+                    <td>{{staff.employeeId}}</td>
+                    <td>{{staff.email}}</td>
+                    <td>{{staff.contactNumber}}</td>
+                    <td class="s-align"></td>
                     <td><input class="sub-button"></td>
                 </tr>
                 <!-- <tr>
@@ -85,9 +85,9 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component({
     computed: {
    
-   companiesdata: {
+   staffdata: {
       get (): string {
-        return this.$store.state.companies;
+        return this.$store.state.staff;
       }
     },
 
