@@ -1,6 +1,6 @@
 <template>
 <div class="vertical-menu">
-        <a href="" class="active">
+        <a href="/dashboard" class="active">
         <div class="row">
             <div class="column img-align">
                <img src="../../assets/dashboard-logo.png" alt="">
@@ -10,8 +10,9 @@
             </div>
         </div>
        </a>
-        <a href="">
+        <a href="/companies">
         <div class="row">
+           
             <div class="column img-align">
                <img src="../../assets/companies-logo.png" alt="">
             </div>
@@ -20,7 +21,7 @@
             </div>
         </div>
         </a>
-        <a href="">
+        <a href="/staff">
         <div class="row">
             <div class="column img-align">
                <img src="../../assets/staff-logo.png" alt="">
@@ -30,7 +31,7 @@
             </div>
         </div>
         </a>
-        <a href="">
+        <a href="/reports">
         <div class="row">
             <div class="column img-align">
                <img src="../../assets/reports-logo.png" alt="">

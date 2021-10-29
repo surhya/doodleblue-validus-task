@@ -4,4 +4,5 @@ export interface RootState {
     membergymtype: Object;
     companies: Object;
     staff: Object;
+    report: Object;
 }

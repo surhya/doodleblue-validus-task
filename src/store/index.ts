@@ -83,6 +83,36 @@ const store: StoreOptions<RootState> = {
       email: 'john@gmail.com',
       contactNumber: '+625 5134 9884'
     },
+  ],
+
+  report: [
+    {
+      id: '1',
+      memberFirstName: 'John',
+      memberLastName: 'Doe',
+      memberNumber: '32145',
+      membershipPlan: '365 by EF',
+      membershipPrice: '$ 4000',
+      rebatePayable: '$ 400'
+    },
+    {
+      id: '2',
+      memberFirstName: 'Albert',
+      memberLastName: 'Doe',
+      memberNumber: '32985',
+      membershipPlan: '365 by EF',
+      membershipPrice: '$ 5000',
+      rebatePayable: '$ 300'
+    },
+    {
+      id: '3',
+      memberFirstName: 'John',
+      memberLastName: 'Doe',
+      memberNumber: '32174',
+      membershipPlan: '365 by EF',
+      membershipPrice: '$ 6200',
+      rebatePayable: '$ 800'
+    },
   ]
     
 
