@@ -53,6 +53,13 @@ const routes: Array<RouteConfig> = [
       import("../views/Reports.vue"),
   },
 
+  {
+    path: "/settings",
+    name: "Settings",
+    component: () =>
+      import("../views/Settings.vue"),
+  },
+
 
   {
     path: "/about",

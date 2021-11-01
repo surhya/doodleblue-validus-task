@@ -51,7 +51,7 @@
             </div>
         </div>
         </a>
-        <a href="">
+        <a href="/settings">
         <div class="row">
             <div class="column img-align">
                <img src="../../assets/settings-logo.png" alt="">
