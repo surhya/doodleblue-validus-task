@@ -41,7 +41,7 @@
             </div>
         </div>
         </a>
-        <a href="">
+        <a href="/memberships">
         <div class="row">
             <div class="column img-align">
                <img src="../../assets/membership-logo.png" alt="">

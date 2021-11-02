@@ -54,6 +54,13 @@ const routes: Array<RouteConfig> = [
   },
 
   {
+    path: "/memberships",
+    name: "Memberships",
+    component: () =>
+      import("../views/Memberships.vue"),
+  },
+
+  {
     path: "/settings",
     name: "Settings",
     component: () =>

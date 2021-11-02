@@ -17,7 +17,7 @@
             </div>
             <div class="column middle" style="background-color:white;">
                 
-              <GeneralSettings />
+              <MembershipsAll />
                 
             </div>
            
@@ -30,15 +30,15 @@
 
 
  import Verticalmenu from '@/components/common/Verticalmenu.vue'
- import GeneralSettings from '@/components/settings/GeneralSettings.vue'
+ import MembershipsAll from '@/components/memberships/MembershipsAll.vue'
 
-// import Stats from '@/components/dashboard/Stats.vue'
+
 
 @Component({
   components: {
     Verticalmenu,
-    GeneralSettings
-    // Stats
+     MembershipsAll
+   
     
   },
 
@@ -52,7 +52,7 @@
 
  })
 
-export default class Settings extends Vue {
+export default class Staff extends Vue {
 }
 
 </script>
