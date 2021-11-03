@@ -5,4 +5,5 @@ export interface RootState {
     companies: Object;
     staff: Object;
     report: Object;
+    membership: Object;
 }

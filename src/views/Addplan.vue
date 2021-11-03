@@ -17,7 +17,7 @@
             </div>
             <div class="column middle" style="background-color:white;">
                 
-              <MembershipsAll />
+              <FormAddPlan />
                              
             </div>
            
@@ -30,7 +30,7 @@
 
 
  import Verticalmenu from '@/components/common/Verticalmenu.vue'
- import MembershipsAll from '@/components/memberships/MembershipsAll.vue'
+ import FormAddPlan from '@/components/memberships/FormAddPlan.vue'
 
 
 
@@ -38,7 +38,7 @@
 @Component({
   components: {
     Verticalmenu,
-     MembershipsAll
+     FormAddPlan
     
    
     
@@ -54,7 +54,7 @@
 
  })
 
-export default class Memberships extends Vue {
+export default class Addplan extends Vue {
 }
 
 </script>
@@ -96,22 +96,29 @@ export default class Memberships extends Vue {
     
 }
 
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
 .topnav .icon {
   display: none;
 }
 
+
+/* Container for flexboxes */
 .row {
   display: -webkit-flex;
   display: flex;
 }
 
-
+/* Create three unequal columns that sits next to each other */
 .column {
   padding: 10px;
-  height: 100vh; 
+  height: 100vh; /* Should be removed. Only for demonstration */
 }
 
-
+/* Left and right column */
 .column.side {
     padding: 0px;
    -webkit-flex: 0.5;
@@ -120,6 +127,7 @@ export default class Memberships extends Vue {
    
 }
 
+/* Middle column */
 .column.middle {
   -webkit-flex: 2;
   -ms-flex: 2;

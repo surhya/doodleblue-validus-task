@@ -37,7 +37,7 @@
 @Component({
   components: {
     Verticalmenu,
-    GeneralSettings
+     GeneralSettings
     // Stats
     
   },

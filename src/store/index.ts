@@ -113,6 +113,32 @@ const store: StoreOptions<RootState> = {
       membershipPrice: '$ 6200',
       rebatePayable: '$ 800'
     },
+  ],
+
+  membership: [
+    {
+      id: '1',
+      planName: 'Platinum',
+      status: 'Active',
+      billingAmount: '$575,000',
+      totalTier: 'I',
+      maximumMembers: '100',
+      feePerMember: '$5,750',
+      suggestedSubsidy: '$1500',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+      id: '2',
+      planName: 'GOLD',
+      status: 'Active',
+      billingAmount: '$425,000',
+      totalTier: 'I',
+      maximumMembers: '100',
+      feePerMember: '$4,520',
+      suggestedSubsidy: '$1500',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+
   ]
     
 

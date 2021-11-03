@@ -7,19 +7,21 @@
                 <h4 class="dashboard-heading">All Membership Plan</h4>
             </div>
             <div class="column">
+                <a href="/memberships/add-plan">
                 <input class="add-button" type="button" value="Add Plan">
+                </a>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" v-for="plan in plandata" :key="plan.id">
             <div class="plan-column">
                 <div class="card">
                      <div class="row">
                         <div class="card-column">
-                            <p>Platinum</p>
+                            <p>{{plan.planName}}</p>
                         </div>
                         <div class="card-column-status">
-                            <p class="status">Active</p>
+                            <p class="status">{{plan.status}}</p>
                         </div>
                         <div class="card-column-status">
                             <input class="sub-button">
@@ -30,7 +32,7 @@
 
                      <div class="row">
                          <div class="price-column">
-                             <p class="price-text">$575,000</p>
+                             <p class="price-text">{{plan.billingAmount}}</p>
                          </div>
                          <div class="cycle-column">
                              <p class="cycle-text">Total Monthly Billing</p>
@@ -47,8 +49,8 @@
                                      
                                  </div>
                                  <div class="detail-colum-sub-info">
-                                     <p class="detail-text-info">I</p>
-                                     <p class="detail-text-info">100</p>
+                                     <p class="detail-text-info">{{plan.totalTier}}</p>
+                                     <p class="detail-text-info">{{plan.maximumMembers}}</p>
                                  </div>
                              </div>
                          </div>
@@ -60,16 +62,16 @@
                                      
                                  </div>
                                  <div class="detail-colum-sub-info">
-                                     <p class="detail-text-info">$5,750</p>
-                                     <p class="detail-text-info">$1500</p>
+                                     <p class="detail-text-info">{{plan.feePerMember}}</p>
+                                     <p class="detail-text-info">{{plan.suggestedSubsidy}}</p>
                                  </div>
                              </div>
                          </div>
                       
                      </div>
                      <div class="desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <p>
+                            {{plan.description}}
                         </p>
                      </div>
 
@@ -93,11 +95,11 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component({
     computed: {
    
-//    staffdata: {
-//       get (): string {
-//         return this.$store.state.staff;
-//       }
-//     },
+   plandata: {
+      get (): string {
+        return this.$store.state.membership;
+      }
+    },
 
   
   }
