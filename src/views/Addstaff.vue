@@ -17,7 +17,7 @@
             </div>
             <div class="column middle" style="background-color:white;">
                 
-              <MembershipsAll />
+              <FormAddStaff />
                              
             </div>
            
@@ -30,7 +30,7 @@
 
 
  import Verticalmenu from '@/components/common/Verticalmenu.vue'
- import MembershipsAll from '@/components/memberships/MembershipsAll.vue'
+ import FormAddStaff from '@/components/staff/FormAddStaff.vue'
 
 
 
@@ -38,7 +38,7 @@
 @Component({
   components: {
     Verticalmenu,
-     MembershipsAll
+     FormAddStaff
     
    
     
@@ -54,7 +54,7 @@
 
  })
 
-export default class Memberships extends Vue {
+export default class Addstaff extends Vue {
 }
 
 </script>
@@ -68,7 +68,7 @@ export default class Memberships extends Vue {
   background-color: #3783F5;
   padding: 1px;
   text-align: center;
-  /* font-size: 35px; */
+
 }
 
 .topnav {
@@ -105,12 +105,10 @@ export default class Memberships extends Vue {
   display: flex;
 }
 
-
 .column {
   padding: 10px;
-  
+ 
 }
-
 
 .column.side {
     padding: 0px;

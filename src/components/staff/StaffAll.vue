@@ -23,7 +23,9 @@
                     </div>
                     
                     <div class="sub-column">
+                      <a href="/staff/add-staff">
                         <input type="button" value="Add Staff">
+                      </a>
                     </div>
                 </div>
                 

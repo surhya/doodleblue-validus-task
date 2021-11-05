@@ -1,52 +1,79 @@
 <template>
 <div>
     <div class="nav-class">
-        <a class="nav-button" href="/memberships"><img class="nav-img" src="../../assets/left-arrow-icon.png" alt="">Membership Plan</a>
+        <a class="nav-button" href="/staff"><img class="nav-img" src="../../assets/left-arrow-icon.png" alt="">Staff</a>
     </div>
 
     <div>
-        <p class="heading">Membership Details</p>
+        <p class="heading">Add Staff Details</p>
     </div>
 
     <div class="row">
         <div class="column">
-            <p class="label">Plan Name</p>
+            <p class="label">First Name</p>
             <input class="plan-input" type="text" placeholder="Enter here">
         </div>
         <div class="column">
-             <p class="label">Tier</p>
-            <input class="plan-input" type="text" placeholder="Enter here">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="column">
-            <p class="label">Maximum Members</p>
-            <input class="plan-input" type="text" placeholder="Enter here">
-        </div>
-        <div class="column">
-             <p class="label">Fee per Member</p>
+             <p class="label">Last Name</p>
             <input class="plan-input" type="text" placeholder="Enter here">
         </div>
     </div>
 
     <div class="row">
         <div class="column">
-            <p class="label">Total Monthly billing</p>
+            <p class="label">Phone</p>
             <input class="plan-input" type="text" placeholder="Enter here">
         </div>
         <div class="column">
-             <p class="label">SUggested subsidy</p>
+             <p class="label">Email</p>
             <input class="plan-input" type="text" placeholder="Enter here">
         </div>
     </div>
 
     <div class="row">
-        <div class="column-desc">
-            <p class="label">Description</p>
-            <input class="plan-input desc-input" type="text" placeholder="Enter here">
+        <div class="column">
+            <p class="label">Street Address</p>
+            <input class="plan-input" type="text" placeholder="Enter here">
+        </div>
+        <div class="column">
+             <p class="label">Town</p>
+            <input class="plan-input" type="text" placeholder="Enter here">
         </div>
     </div>
+
+    <div class="row">
+        <div class="column">
+            <p class="label">Emergency Contact Person Name</p>
+            <input class="plan-input" type="text" placeholder="Enter here">
+        </div>
+        <div class="column">
+             <p class="label">Emergency Contact Person Number</p>
+            <input class="plan-input" type="text" placeholder="Enter here">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <p class="label">Emergency Contact Person Relationship</p>
+            <input class="plan-input" type="text" placeholder="Enter here">
+        </div>
+        <div class="column">
+             <p class="label">Gender</p>
+            <input class="plan-input" type="text" placeholder="Enter here">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <p class="label">Date of Birth</p>
+            <input class="plan-input" type="text" placeholder="Enter here">
+        </div>
+        <div class="column">
+             <p class="label">Employee ID</p>
+            <input class="plan-input" type="text" placeholder="Enter here">
+        </div>
+    </div>
+
 
     <div class="line"></div>
 
@@ -101,13 +128,6 @@ margin-right: 10px;
   clear: both;
 }
 
-.column-desc{
-    float: left;
-  width: 100%;
-  padding: 10px;
- text-align: left;
-}
-
 .label {
  font-size: 14px;
  font-weight: 600;
@@ -124,9 +144,6 @@ margin-right: 10px;
   background: #F9F9F9;
 }
 
-.desc-input {
-   height: 100px;
-}
 
 .plan-input:focus {
     outline: none;

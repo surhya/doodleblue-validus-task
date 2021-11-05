@@ -73,13 +73,13 @@
 
 .vertical-menu {
   width: 100%;
+  
 }
 
 .vertical-menu a {
   background-color: #f7f5f5;
   color: #555555;
   display: block;
-  
   text-decoration: none;
   
 }
@@ -93,20 +93,14 @@
   color: white;
 }
 
-/* .vertical-menu img {
-    padding-right: 20px;
-} */
-
 .column {
   float: left;
   width: 70%;
   padding: 10px;
   height: 70px;
   
-  
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
