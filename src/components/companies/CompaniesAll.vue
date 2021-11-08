@@ -23,7 +23,9 @@
                     </div>
                     
                     <div class="sub-column">
+                      <a href="/companies/add-company">
                         <input type="button" value="Add Company">
+                      </a>
                     </div>
                 </div>
                 

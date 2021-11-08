@@ -40,6 +40,15 @@ const routes: Array<RouteConfig> = [
   },
 
   {
+    path: "/companies/add-company",
+    name: "Addcompany",
+    component: () =>
+      import("../views/AddCompany.vue"),
+  },
+
+
+
+  {
     path: "/staff",
     name: "Staff",
     component: () =>
