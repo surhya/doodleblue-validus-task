@@ -45,7 +45,13 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import("../views/AddCompany.vue"),
   },
-
+ 
+  {
+    path: "/companies/add-hr",
+    name: "Addhr",
+    component: () =>
+      import("../views/Addhr.vue"),
+  },
 
 
   {
