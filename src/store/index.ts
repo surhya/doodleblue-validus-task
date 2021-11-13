@@ -139,8 +139,27 @@ const store: StoreOptions<RootState> = {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
 
-  ]
-    
+  ],
+
+  staffDetail: 
+    {
+      id: '1',
+      firstName: 'John',
+      lastName: 'Doe',
+      streetAddress: '1 Apple way Park',
+      town: 'Calofornia, US',
+      email: 'contact@apple.co.in',
+      emerContact: 'Albert',
+      emerphone: '+ 71 569822',
+      emerRelation: 'Father',
+      gender: 'male',
+      dob: '21-01-2021',
+      empid: 'SAGI12345',
+      phoneNumber: '+32 5465 666',
+      planChosen: 'gold',
+      payment: 'netbanking',
+    },
+      
 
   },
   modules: {

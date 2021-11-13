@@ -17,8 +17,8 @@
             </div>
             <div class="column middle" style="background-color:white;">
                 
-              <StaffAll />
-                
+              <Detail />
+                             
             </div>
            
         </div>
@@ -30,15 +30,17 @@
 
 
  import Verticalmenu from '@/components/common/Verticalmenu.vue'
- import StaffAll from '@/components/staff/StaffAll.vue'
+ import Detail from '@/components/staff/Detail.vue'
 
-// import Stats from '@/components/dashboard/Stats.vue'
+
+
 
 @Component({
   components: {
     Verticalmenu,
-    StaffAll
-    // Stats
+     Detail
+    
+   
     
   },
 
@@ -52,7 +54,7 @@
 
  })
 
-export default class Staff extends Vue {
+export default class Staffdetail extends Vue {
 }
 
 </script>
@@ -94,15 +96,9 @@ export default class Staff extends Vue {
     
 }
 
-/* .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-} */
-
 .topnav .icon {
   display: none;
 }
-
 
 .row {
   display: -webkit-flex;
@@ -112,7 +108,7 @@ export default class Staff extends Vue {
 
 .column {
   padding: 10px;
-  height: 100vh; 
+  height: 190vh;
 }
 
 
@@ -123,7 +119,6 @@ export default class Staff extends Vue {
    flex: 0.5;
    
 }
-
 
 .column.middle {
   -webkit-flex: 2;
